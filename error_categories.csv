@@ -1,0 +1,21 @@
+﻿row_id,category
+Safe-Guard:test:2008,Security vocabulary in benign text
+Safe-Guard:test:1887,Strict output instruction
+Safe-Guard:test:8,Short prompt near starting score
+Safe-Guard:test:1313,Strict output instruction
+Safe-Guard:test:262,Short prompt near starting score
+Safe-Guard:test:1094,Role instruction resembles jailbreak
+Safe-Guard:test:580,Short prompt near starting score
+Safe-Guard:test:485,Role instruction resembles jailbreak
+Safe-Guard:test:846,Short prompt near starting score
+Safe-Guard:test:1948,Strict output instruction
+Safe-Guard:test:1283,Override cue words disguised
+Safe-Guard:test:1703,Few task cue words disguised
+Safe-Guard:test:155,Long role-play dilutes cues
+Safe-Guard:test:2050,Few task cue words disguised
+Safe-Guard:test:603,Few task cue words disguised
+Safe-Guard:test:987,Very short prompt cue word disguised
+Safe-Guard:test:254,Few task cue words disguised
+Safe-Guard:test:207,Very short prompt cue word disguised
+Safe-Guard:test:2053,Long role-play dilutes cues
+Safe-Guard:test:521,Override cue words disguised
