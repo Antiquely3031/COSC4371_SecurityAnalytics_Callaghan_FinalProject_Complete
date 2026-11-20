@@ -1,0 +1,10 @@
+# GPU-only packages for transformer_checkpoint.py (run on Google Colab, T4 GPU).
+# The TF-IDF pipeline (final_project.py) uses requirements.txt instead.
+torch>=2.1
+transformers>=4.36
+datasets>=2.18
+sentencepiece>=0.1.99
+protobuf>=3.20
+scikit-learn>=1.3
+pandas>=2.0
+numpy>=1.24

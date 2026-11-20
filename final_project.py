@@ -200,7 +200,7 @@ def plot_sweep(all_scores):
     markers = ["o", "s", "^", "D"]                         # shapes too, so lines differ without color
     columns = list(dict.fromkeys(all_scores["column"]))    # one panel per model, in run order
 
-    fig, axes = plt.subplots(1, len(columns), figsize=(11, 4.2), sharey=True)
+    fig, axes = plt.subplots(1, len(columns), figsize=(5.5 * len(columns), 4.2), sharey=True)
     for ax, column in zip(axes, columns):
         g = all_scores[all_scores["column"] == column]
 
@@ -349,6 +349,10 @@ for model_name, model in MODELS.items():
     plot_figures(model_name, pd.concat(score_tables), threshold)                  
 
 everything = pd.concat(all_tables)
+
+if os.path.exists("scores_transformers.csv"):
+    everything = pd.concat([everything, pd.read_csv("scores_transformers.csv")], ignore_index=True)
+
 everything.to_csv("scores.csv", index=False)
 plot_sweep(everything[everything["column"].str.endswith("/none")])
 
