@@ -1,10 +1,11 @@
 """
 Created by Patrick Callaghan (2523109)
 
-COSC4371 Security Analytics - Final Checkpoint
+COSC4371 Security Analytics - Final Project
 Project: #15 Variant (Safe-Guard only)
 """
 
+import os
 import re
 import sys
 import time
@@ -322,11 +323,9 @@ for model_name, model in MODELS.items():
     
     all_tables.extend(score_tables)
     
-    # Normalization defense: same trained model; every prompt is normalized before scoring,
-    # and the threshold is re-chosen on normalized validation prompts.
+    # Normalization is a test-time defense, so it uses the threshold of the model it is applied to.
     norm_column = f"{model_name}/normalization"
-    norm_benign = score(model, validation.loc[validation["label"] == 0, "text"].map(normalize))
-    norm_threshold = choose_threshold(norm_benign, TARGET_FPR)
+    norm_threshold = threshold
     print(f"\n== NORMALIZATION ==\nThreshold: {norm_threshold:.6f}")
     all_tables.extend(score_column(model, norm_column, norm_threshold, prep=normalize))
     
