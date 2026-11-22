@@ -1,4 +1,4 @@
-split.csv: 9904 rows. scores.csv: 307350 rows, 25 value(s), 6 column(s).
+split.csv: 9904 rows. scores.csv: 563475 rows, 25 value(s), 11 column(s).
 Values: clean, zero_width, homoglyph, base64, token_split, typo, payload_split, role_framing, base64_wide, zero_width_0.1, zero_width_0.2, zero_width_0.6, zero_width_1.0, homoglyph_0.1, homoglyph_0.2, homoglyph_0.6, homoglyph_1.0, token_split_0.1, token_split_0.2, token_split_0.6, token_split_1.0, typo_0.1, typo_0.2, typo_0.6, typo_1.0
 
 Rows per dataset and split
@@ -2112,6 +2112,1756 @@ Value: typo_1.0   Column: char_svm/augmentation
   AP                        0.9982 [0.9970, 0.9993]
   AUROC                     0.9991 [0.9985, 0.9997]
 
+Value: clean   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8444, 0.8932]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0560, 0.0836]
+  AP                        0.9992 [0.9977, 1.0000]
+  AUROC                     0.9994 [0.9982, 1.0000]
+
+Value: zero_width   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8446, 0.8924]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0692 [0.0570, 0.0833]
+  AP                        0.9992 [0.9976, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: homoglyph   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8448, 0.8955]
+  recall                    0.9985 [0.9949, 1.0000]
+  false-positive rate       0.0692 [0.0550, 0.0821]
+  AP                        0.9988 [0.9971, 0.9999]
+  AUROC                     0.9994 [0.9985, 1.0000]
+
+Value: base64   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8455, 0.8952]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0561, 0.0820]
+  AP                        0.9962 [0.9915, 0.9996]
+  AUROC                     0.9987 [0.9972, 0.9998]
+
+Value: token_split   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8464, 0.8946]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0553, 0.0824]
+  AP                        0.9994 [0.9982, 1.0000]
+  AUROC                     0.9996 [0.9988, 1.0000]
+
+Value: typo   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8425, 0.8940]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0692 [0.0561, 0.0844]
+  AP                        0.9997 [0.9991, 1.0000]
+  AUROC                     0.9999 [0.9995, 1.0000]
+
+Value: payload_split   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8455, 0.8928]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0558, 0.0841]
+  AP                        0.9999 [0.9998, 1.0000]
+  AUROC                     1.0000 [0.9999, 1.0000]
+
+Value: role_framing   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8469, 0.8952]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0553, 0.0826]
+  AP                        1.0000 [0.9999, 1.0000]
+  AUROC                     1.0000 [1.0000, 1.0000]
+
+Value: base64_wide   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8277 [0.7965, 0.8606]
+  recall                    0.7191 [0.6839, 0.7544]
+  false-positive rate       0.0692 [0.0558, 0.0823]
+  AP                        0.9145 [0.8988, 0.9294]
+  AUROC                     0.9537 [0.9455, 0.9614]
+
+Value: zero_width_0.1   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8445, 0.8946]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0563, 0.0824]
+  AP                        0.9992 [0.9977, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: zero_width_0.2   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8452, 0.8938]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0562, 0.0832]
+  AP                        0.9992 [0.9977, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: zero_width_0.6   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8464, 0.8921]
+  recall                    0.9985 [0.9950, 1.0000]
+  false-positive rate       0.0692 [0.0564, 0.0824]
+  AP                        0.9992 [0.9975, 1.0000]
+  AUROC                     0.9994 [0.9980, 1.0000]
+
+Value: zero_width_1.0   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8446, 0.8924]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0692 [0.0568, 0.0831]
+  AP                        0.9992 [0.9976, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: homoglyph_0.1   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8456, 0.8943]
+  recall                    0.9985 [0.9953, 1.0000]
+  false-positive rate       0.0692 [0.0555, 0.0819]
+  AP                        0.9993 [0.9978, 1.0000]
+  AUROC                     0.9994 [0.9982, 1.0000]
+
+Value: homoglyph_0.2   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8453, 0.8924]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0569, 0.0820]
+  AP                        0.9993 [0.9983, 1.0000]
+  AUROC                     0.9996 [0.9989, 1.0000]
+
+Value: homoglyph_0.6   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8452, 0.8924]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0563, 0.0826]
+  AP                        0.9957 [0.9882, 1.0000]
+  AUROC                     0.9989 [0.9972, 1.0000]
+
+Value: homoglyph_1.0   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8424, 0.8949]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0559, 0.0832]
+  AP                        0.9872 [0.9703, 1.0000]
+  AUROC                     0.9984 [0.9961, 1.0000]
+
+Value: token_split_0.1   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8458, 0.8941]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0568, 0.0824]
+  AP                        0.9994 [0.9983, 1.0000]
+  AUROC                     0.9996 [0.9988, 1.0000]
+
+Value: token_split_0.2   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8441, 0.8929]
+  recall                    0.9985 [0.9953, 1.0000]
+  false-positive rate       0.0692 [0.0567, 0.0828]
+  AP                        0.9994 [0.9984, 1.0000]
+  AUROC                     0.9996 [0.9989, 1.0000]
+
+Value: token_split_0.6   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8437, 0.8945]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0557, 0.0823]
+  AP                        0.9997 [0.9994, 0.9999]
+  AUROC                     0.9999 [0.9997, 1.0000]
+
+Value: token_split_1.0   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8456, 0.8931]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0557, 0.0821]
+  AP                        0.9989 [0.9976, 0.9998]
+  AUROC                     0.9995 [0.9990, 0.9999]
+
+Value: typo_0.1   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8440, 0.8941]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0692 [0.0565, 0.0827]
+  AP                        0.9993 [0.9976, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: typo_0.2   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8451, 0.8943]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0570, 0.0828]
+  AP                        0.9994 [0.9981, 1.0000]
+  AUROC                     0.9996 [0.9987, 1.0000]
+
+Value: typo_0.6   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8450, 0.8927]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0559, 0.0823]
+  AP                        0.9999 [0.9996, 1.0000]
+  AUROC                     0.9999 [0.9998, 1.0000]
+
+Value: typo_1.0   Column: distilbert/none
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8437, 0.8928]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0560, 0.0831]
+  AP                        0.9995 [0.9989, 0.9999]
+  AUROC                     0.9998 [0.9995, 1.0000]
+
+Value: clean   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8430, 0.8938]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0692 [0.0553, 0.0835]
+  AP                        0.9992 [0.9977, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: zero_width   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8448, 0.8926]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0560, 0.0833]
+  AP                        0.9992 [0.9977, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: homoglyph   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8456, 0.8927]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0563, 0.0830]
+  AP                        0.9992 [0.9977, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: base64   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8455, 0.8914]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0568, 0.0834]
+  AP                        1.0000 [0.9999, 1.0000]
+  AUROC                     1.0000 [1.0000, 1.0000]
+
+Value: token_split   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8454, 0.8933]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0692 [0.0570, 0.0833]
+  AP                        0.9994 [0.9981, 1.0000]
+  AUROC                     0.9996 [0.9987, 1.0000]
+
+Value: typo   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8478, 0.8941]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0692 [0.0555, 0.0820]
+  AP                        0.9997 [0.9991, 1.0000]
+  AUROC                     0.9999 [0.9995, 1.0000]
+
+Value: payload_split   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8446, 0.8920]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0569, 0.0828]
+  AP                        0.9999 [0.9998, 1.0000]
+  AUROC                     1.0000 [0.9999, 1.0000]
+
+Value: role_framing   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8459, 0.8932]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0558, 0.0822]
+  AP                        1.0000 [0.9999, 1.0000]
+  AUROC                     1.0000 [1.0000, 1.0000]
+
+Value: base64_wide   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8457, 0.8935]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0562, 0.0822]
+  AP                        0.9994 [0.9984, 0.9999]
+  AUROC                     0.9997 [0.9991, 1.0000]
+
+Value: zero_width_0.1   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8448, 0.8950]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0561, 0.0826]
+  AP                        0.9992 [0.9977, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: zero_width_0.2   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8454, 0.8934]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0563, 0.0829]
+  AP                        0.9992 [0.9977, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: zero_width_0.6   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8435, 0.8924]
+  recall                    0.9985 [0.9950, 1.0000]
+  false-positive rate       0.0692 [0.0561, 0.0829]
+  AP                        0.9992 [0.9976, 1.0000]
+  AUROC                     0.9994 [0.9980, 1.0000]
+
+Value: zero_width_1.0   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8463, 0.8927]
+  recall                    0.9985 [0.9950, 1.0000]
+  false-positive rate       0.0692 [0.0568, 0.0829]
+  AP                        0.9992 [0.9976, 1.0000]
+  AUROC                     0.9994 [0.9980, 1.0000]
+
+Value: homoglyph_0.1   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8452, 0.8926]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0692 [0.0559, 0.0836]
+  AP                        0.9992 [0.9975, 1.0000]
+  AUROC                     0.9994 [0.9980, 1.0000]
+
+Value: homoglyph_0.2   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8431, 0.8923]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0692 [0.0569, 0.0835]
+  AP                        0.9992 [0.9976, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: homoglyph_0.6   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8454, 0.8940]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0564, 0.0828]
+  AP                        0.9992 [0.9976, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: homoglyph_1.0   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8461, 0.8938]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0560, 0.0824]
+  AP                        0.9992 [0.9977, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: token_split_0.1   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8467, 0.8934]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0692 [0.0568, 0.0819]
+  AP                        0.9994 [0.9983, 1.0000]
+  AUROC                     0.9996 [0.9988, 1.0000]
+
+Value: token_split_0.2   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8439, 0.8925]
+  recall                    0.9985 [0.9943, 1.0000]
+  false-positive rate       0.0692 [0.0562, 0.0830]
+  AP                        0.9994 [0.9981, 1.0000]
+  AUROC                     0.9996 [0.9987, 1.0000]
+
+Value: token_split_0.6   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8443, 0.8947]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0557, 0.0821]
+  AP                        0.9997 [0.9993, 0.9999]
+  AUROC                     0.9999 [0.9997, 1.0000]
+
+Value: token_split_1.0   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8460, 0.8941]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0565, 0.0827]
+  AP                        0.9989 [0.9976, 0.9998]
+  AUROC                     0.9995 [0.9990, 0.9999]
+
+Value: typo_0.1   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8455, 0.8943]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0692 [0.0559, 0.0819]
+  AP                        0.9993 [0.9977, 1.0000]
+  AUROC                     0.9994 [0.9981, 1.0000]
+
+Value: typo_0.2   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8696 [0.8448, 0.8943]
+  recall                    0.9985 [0.9953, 1.0000]
+  false-positive rate       0.0692 [0.0555, 0.0834]
+  AP                        0.9994 [0.9982, 1.0000]
+  AUROC                     0.9996 [0.9987, 1.0000]
+
+Value: typo_0.6   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8443, 0.8937]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0564, 0.0832]
+  AP                        0.9999 [0.9996, 1.0000]
+  AUROC                     0.9999 [0.9998, 1.0000]
+
+Value: typo_1.0   Column: distilbert/normalization
+  threshold                 0.002023
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8698 [0.8429, 0.8942]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0692 [0.0567, 0.0836]
+  AP                        0.9995 [0.9989, 0.9999]
+  AUROC                     0.9998 [0.9995, 1.0000]
+
+Value: clean   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8318, 0.8822]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0764 [0.0628, 0.0898]
+  AP                        0.9994 [0.9984, 1.0000]
+  AUROC                     0.9996 [0.9990, 1.0000]
+
+Value: zero_width   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8347, 0.8830]
+  recall                    0.9985 [0.9953, 1.0000]
+  false-positive rate       0.0764 [0.0621, 0.0903]
+  AP                        0.9994 [0.9984, 1.0000]
+  AUROC                     0.9996 [0.9990, 1.0000]
+
+Value: homoglyph   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8583 [0.8333, 0.8831]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0764 [0.0624, 0.0905]
+  AP                        0.9996 [0.9991, 0.9999]
+  AUROC                     0.9998 [0.9996, 0.9999]
+
+Value: base64   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8583 [0.8340, 0.8839]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0764 [0.0620, 0.0898]
+  AP                        1.0000 [1.0000, 1.0000]
+  AUROC                     1.0000 [1.0000, 1.0000]
+
+Value: token_split   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8351, 0.8831]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0764 [0.0629, 0.0907]
+  AP                        0.9994 [0.9985, 1.0000]
+  AUROC                     0.9997 [0.9991, 1.0000]
+
+Value: typo   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8307, 0.8805]
+  recall                    0.9985 [0.9939, 1.0000]
+  false-positive rate       0.0764 [0.0639, 0.0921]
+  AP                        0.9996 [0.9988, 1.0000]
+  AUROC                     0.9998 [0.9994, 1.0000]
+
+Value: payload_split   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8583 [0.8327, 0.8822]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0764 [0.0628, 0.0899]
+  AP                        0.9998 [0.9995, 1.0000]
+  AUROC                     0.9999 [0.9998, 1.0000]
+
+Value: role_framing   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8583 [0.8331, 0.8816]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0764 [0.0633, 0.0912]
+  AP                        0.9999 [0.9998, 1.0000]
+  AUROC                     1.0000 [0.9999, 1.0000]
+
+Value: base64_wide   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8351 [0.8076, 0.8637]
+  recall                    0.8364 [0.8091, 0.8634]
+  false-positive rate       0.0764 [0.0623, 0.0896]
+  AP                        0.9408 [0.9287, 0.9520]
+  AUROC                     0.9686 [0.9629, 0.9747]
+
+Value: zero_width_0.1   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8318, 0.8803]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0764 [0.0630, 0.0906]
+  AP                        0.9994 [0.9984, 1.0000]
+  AUROC                     0.9996 [0.9990, 1.0000]
+
+Value: zero_width_0.2   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8319, 0.8830]
+  recall                    0.9985 [0.9950, 1.0000]
+  false-positive rate       0.0764 [0.0631, 0.0913]
+  AP                        0.9994 [0.9982, 1.0000]
+  AUROC                     0.9996 [0.9989, 1.0000]
+
+Value: zero_width_0.6   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8326, 0.8828]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0764 [0.0630, 0.0913]
+  AP                        0.9994 [0.9983, 1.0000]
+  AUROC                     0.9996 [0.9990, 1.0000]
+
+Value: zero_width_1.0   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8347, 0.8828]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0764 [0.0624, 0.0897]
+  AP                        0.9994 [0.9984, 1.0000]
+  AUROC                     0.9996 [0.9990, 1.0000]
+
+Value: homoglyph_0.1   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8322, 0.8828]
+  recall                    0.9985 [0.9953, 1.0000]
+  false-positive rate       0.0764 [0.0626, 0.0905]
+  AP                        0.9996 [0.9990, 1.0000]
+  AUROC                     0.9998 [0.9995, 1.0000]
+
+Value: homoglyph_0.2   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8347, 0.8830]
+  recall                    0.9985 [0.9953, 1.0000]
+  false-positive rate       0.0764 [0.0619, 0.0905]
+  AP                        0.9995 [0.9989, 0.9999]
+  AUROC                     0.9998 [0.9995, 1.0000]
+
+Value: homoglyph_0.6   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8583 [0.8324, 0.8825]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0764 [0.0628, 0.0899]
+  AP                        0.9995 [0.9989, 0.9998]
+  AUROC                     0.9997 [0.9995, 0.9999]
+
+Value: homoglyph_1.0   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8583 [0.8342, 0.8860]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0764 [0.0618, 0.0911]
+  AP                        0.9993 [0.9987, 0.9999]
+  AUROC                     0.9997 [0.9994, 0.9999]
+
+Value: token_split_0.1   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8301, 0.8822]
+  recall                    0.9985 [0.9953, 1.0000]
+  false-positive rate       0.0764 [0.0632, 0.0923]
+  AP                        0.9995 [0.9987, 0.9999]
+  AUROC                     0.9997 [0.9992, 1.0000]
+
+Value: token_split_0.2   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8327, 0.8838]
+  recall                    0.9985 [0.9953, 1.0000]
+  false-positive rate       0.0764 [0.0624, 0.0900]
+  AP                        0.9994 [0.9986, 0.9999]
+  AUROC                     0.9997 [0.9992, 1.0000]
+
+Value: token_split_0.6   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8333, 0.8824]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0764 [0.0632, 0.0898]
+  AP                        0.9995 [0.9986, 1.0000]
+  AUROC                     0.9997 [0.9992, 1.0000]
+
+Value: token_split_1.0   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8329, 0.8817]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0764 [0.0629, 0.0908]
+  AP                        0.9995 [0.9989, 0.9999]
+  AUROC                     0.9998 [0.9994, 1.0000]
+
+Value: typo_0.1   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8320, 0.8833]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0764 [0.0620, 0.0905]
+  AP                        0.9994 [0.9986, 1.0000]
+  AUROC                     0.9997 [0.9992, 1.0000]
+
+Value: typo_0.2   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8324, 0.8819]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0764 [0.0624, 0.0901]
+  AP                        0.9993 [0.9982, 1.0000]
+  AUROC                     0.9996 [0.9989, 1.0000]
+
+Value: typo_0.6   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8327, 0.8829]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0764 [0.0625, 0.0907]
+  AP                        0.9996 [0.9988, 1.0000]
+  AUROC                     0.9998 [0.9994, 1.0000]
+
+Value: typo_1.0   Column: distilbert/augmentation
+  threshold                 0.001139
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8581 [0.8322, 0.8813]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0764 [0.0632, 0.0908]
+  AP                        0.9995 [0.9988, 0.9999]
+  AUROC                     0.9998 [0.9993, 1.0000]
+
+Value: clean   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8927 [0.8688, 0.9139]
+  recall                    0.9753 [0.9620, 0.9864]
+  false-positive rate       0.0542 [0.0427, 0.0661]
+  AP                        0.9879 [0.9828, 0.9925]
+  AUROC                     0.9920 [0.9874, 0.9955]
+
+Value: zero_width   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8940 [0.8715, 0.9152]
+  recall                    0.9892 [0.9802, 0.9968]
+  false-positive rate       0.0542 [0.0432, 0.0658]
+  AP                        0.9952 [0.9922, 0.9975]
+  AUROC                     0.9973 [0.9955, 0.9986]
+
+Value: homoglyph   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8949 [0.8714, 0.9164]
+  recall                    0.9985 [0.9951, 1.0000]
+  false-positive rate       0.0542 [0.0429, 0.0657]
+  AP                        0.9979 [0.9959, 0.9993]
+  AUROC                     0.9990 [0.9980, 0.9997]
+
+Value: base64   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8950 [0.8728, 0.9170]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0542 [0.0435, 0.0661]
+  AP                        0.9999 [0.9997, 1.0000]
+  AUROC                     1.0000 [0.9999, 1.0000]
+
+Value: token_split   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8940 [0.8713, 0.9171]
+  recall                    0.9892 [0.9806, 0.9968]
+  false-positive rate       0.0542 [0.0424, 0.0655]
+  AP                        0.9948 [0.9918, 0.9972]
+  AUROC                     0.9971 [0.9954, 0.9986]
+
+Value: typo   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8940 [0.8715, 0.9174]
+  recall                    0.9892 [0.9799, 0.9954]
+  false-positive rate       0.0542 [0.0418, 0.0666]
+  AP                        0.9932 [0.9888, 0.9962]
+  AUROC                     0.9952 [0.9910, 0.9978]
+
+Value: payload_split   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8950 [0.8727, 0.9175]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0542 [0.0429, 0.0668]
+  AP                        0.9995 [0.9990, 0.9999]
+  AUROC                     0.9998 [0.9995, 0.9999]
+
+Value: role_framing   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8947 [0.8736, 0.9164]
+  recall                    0.9969 [0.9921, 1.0000]
+  false-positive rate       0.0542 [0.0433, 0.0668]
+  AP                        0.9977 [0.9962, 0.9989]
+  AUROC                     0.9989 [0.9983, 0.9995]
+
+Value: base64_wide   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8950 [0.8717, 0.9170]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0542 [0.0428, 0.0670]
+  AP                        0.9971 [0.9944, 0.9989]
+  AUROC                     0.9988 [0.9978, 0.9995]
+
+Value: zero_width_0.1   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8934 [0.8720, 0.9173]
+  recall                    0.9830 [0.9725, 0.9924]
+  false-positive rate       0.0542 [0.0428, 0.0664]
+  AP                        0.9908 [0.9863, 0.9946]
+  AUROC                     0.9941 [0.9907, 0.9968]
+
+Value: zero_width_0.2   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8939 [0.8702, 0.9156]
+  recall                    0.9877 [0.9779, 0.9954]
+  false-positive rate       0.0542 [0.0427, 0.0670]
+  AP                        0.9934 [0.9893, 0.9964]
+  AUROC                     0.9959 [0.9931, 0.9981]
+
+Value: zero_width_0.6   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8946 [0.8735, 0.9161]
+  recall                    0.9954 [0.9892, 1.0000]
+  false-positive rate       0.0542 [0.0433, 0.0654]
+  AP                        0.9977 [0.9958, 0.9992]
+  AUROC                     0.9988 [0.9976, 0.9996]
+
+Value: zero_width_1.0   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8949 [0.8695, 0.9162]
+  recall                    0.9985 [0.9953, 1.0000]
+  false-positive rate       0.0542 [0.0428, 0.0667]
+  AP                        0.9989 [0.9973, 1.0000]
+  AUROC                     0.9994 [0.9984, 1.0000]
+
+Value: homoglyph_0.1   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8943 [0.8717, 0.9167]
+  recall                    0.9923 [0.9845, 0.9984]
+  false-positive rate       0.0542 [0.0425, 0.0658]
+  AP                        0.9958 [0.9931, 0.9979]
+  AUROC                     0.9976 [0.9957, 0.9990]
+
+Value: homoglyph_0.2   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8949 [0.8728, 0.9151]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0542 [0.0428, 0.0659]
+  AP                        0.9976 [0.9955, 0.9990]
+  AUROC                     0.9988 [0.9978, 0.9995]
+
+Value: homoglyph_0.6   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8950 [0.8716, 0.9162]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0542 [0.0428, 0.0671]
+  AP                        0.9992 [0.9978, 1.0000]
+  AUROC                     0.9997 [0.9991, 1.0000]
+
+Value: homoglyph_1.0   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8950 [0.8721, 0.9155]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0542 [0.0436, 0.0661]
+  AP                        0.9987 [0.9960, 1.0000]
+  AUROC                     0.9996 [0.9987, 1.0000]
+
+Value: token_split_0.1   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8931 [0.8710, 0.9146]
+  recall                    0.9799 [0.9686, 0.9897]
+  false-positive rate       0.0542 [0.0433, 0.0664]
+  AP                        0.9915 [0.9873, 0.9951]
+  AUROC                     0.9945 [0.9907, 0.9971]
+
+Value: token_split_0.2   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8934 [0.8705, 0.9154]
+  recall                    0.9830 [0.9726, 0.9923]
+  false-positive rate       0.0542 [0.0428, 0.0662]
+  AP                        0.9929 [0.9898, 0.9958]
+  AUROC                     0.9959 [0.9939, 0.9977]
+
+Value: token_split_0.6   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8946 [0.8729, 0.9161]
+  recall                    0.9954 [0.9893, 1.0000]
+  false-positive rate       0.0542 [0.0432, 0.0662]
+  AP                        0.9976 [0.9956, 0.9990]
+  AUROC                     0.9987 [0.9975, 0.9995]
+
+Value: token_split_1.0   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8949 [0.8737, 0.9170]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0542 [0.0429, 0.0659]
+  AP                        0.9984 [0.9966, 0.9998]
+  AUROC                     0.9992 [0.9981, 0.9999]
+
+Value: typo_0.1   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8933 [0.8714, 0.9161]
+  recall                    0.9815 [0.9709, 0.9910]
+  false-positive rate       0.0542 [0.0428, 0.0670]
+  AP                        0.9910 [0.9870, 0.9943]
+  AUROC                     0.9944 [0.9917, 0.9969]
+
+Value: typo_0.2   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8939 [0.8709, 0.9157]
+  recall                    0.9877 [0.9795, 0.9953]
+  false-positive rate       0.0542 [0.0430, 0.0665]
+  AP                        0.9920 [0.9881, 0.9953]
+  AUROC                     0.9949 [0.9921, 0.9973]
+
+Value: typo_0.6   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8937 [0.8713, 0.9170]
+  recall                    0.9861 [0.9772, 0.9941]
+  false-positive rate       0.0542 [0.0423, 0.0663]
+  AP                        0.9948 [0.9917, 0.9975]
+  AUROC                     0.9963 [0.9930, 0.9987]
+
+Value: typo_1.0   Column: protectai/none
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8947 [0.8722, 0.9162]
+  recall                    0.9969 [0.9921, 1.0000]
+  false-positive rate       0.0542 [0.0428, 0.0656]
+  AP                        0.9976 [0.9955, 0.9991]
+  AUROC                     0.9988 [0.9976, 0.9996]
+
+Value: clean   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8927 [0.8694, 0.9135]
+  recall                    0.9753 [0.9631, 0.9870]
+  false-positive rate       0.0542 [0.0431, 0.0663]
+  AP                        0.9879 [0.9829, 0.9921]
+  AUROC                     0.9920 [0.9878, 0.9953]
+
+Value: zero_width   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8927 [0.8685, 0.9143]
+  recall                    0.9753 [0.9621, 0.9865]
+  false-positive rate       0.0542 [0.0428, 0.0660]
+  AP                        0.9879 [0.9829, 0.9925]
+  AUROC                     0.9920 [0.9880, 0.9957]
+
+Value: homoglyph   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8927 [0.8689, 0.9155]
+  recall                    0.9753 [0.9625, 0.9865]
+  false-positive rate       0.0542 [0.0425, 0.0660]
+  AP                        0.9879 [0.9827, 0.9922]
+  AUROC                     0.9920 [0.9877, 0.9956]
+
+Value: base64   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8950 [0.8731, 0.9164]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0542 [0.0429, 0.0655]
+  AP                        0.9998 [0.9994, 1.0000]
+  AUROC                     0.9999 [0.9997, 1.0000]
+
+Value: token_split   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8940 [0.8699, 0.9155]
+  recall                    0.9892 [0.9802, 0.9956]
+  false-positive rate       0.0542 [0.0425, 0.0662]
+  AP                        0.9948 [0.9917, 0.9973]
+  AUROC                     0.9971 [0.9952, 0.9986]
+
+Value: typo   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8940 [0.8677, 0.9145]
+  recall                    0.9892 [0.9809, 0.9968]
+  false-positive rate       0.0542 [0.0431, 0.0669]
+  AP                        0.9932 [0.9890, 0.9965]
+  AUROC                     0.9952 [0.9915, 0.9980]
+
+Value: payload_split   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8950 [0.8714, 0.9157]
+  recall                    1.0000 [1.0000, 1.0000]
+  false-positive rate       0.0542 [0.0434, 0.0674]
+  AP                        0.9995 [0.9990, 0.9999]
+  AUROC                     0.9998 [0.9995, 1.0000]
+
+Value: role_framing   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8947 [0.8724, 0.9178]
+  recall                    0.9969 [0.9922, 1.0000]
+  false-positive rate       0.0542 [0.0423, 0.0662]
+  AP                        0.9977 [0.9959, 0.9989]
+  AUROC                     0.9989 [0.9982, 0.9995]
+
+Value: base64_wide   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8936 [0.8702, 0.9146]
+  recall                    0.9846 [0.9744, 0.9938]
+  false-positive rate       0.0542 [0.0430, 0.0666]
+  AP                        0.9944 [0.9914, 0.9968]
+  AUROC                     0.9967 [0.9949, 0.9983]
+
+Value: zero_width_0.1   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8927 [0.8688, 0.9138]
+  recall                    0.9753 [0.9634, 0.9863]
+  false-positive rate       0.0542 [0.0430, 0.0672]
+  AP                        0.9879 [0.9828, 0.9923]
+  AUROC                     0.9920 [0.9877, 0.9954]
+
+Value: zero_width_0.2   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8927 [0.8687, 0.9161]
+  recall                    0.9753 [0.9635, 0.9858]
+  false-positive rate       0.0542 [0.0423, 0.0666]
+  AP                        0.9879 [0.9828, 0.9922]
+  AUROC                     0.9920 [0.9877, 0.9953]
+
+Value: zero_width_0.6   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8927 [0.8692, 0.9149]
+  recall                    0.9753 [0.9626, 0.9866]
+  false-positive rate       0.0542 [0.0426, 0.0667]
+  AP                        0.9879 [0.9828, 0.9924]
+  AUROC                     0.9920 [0.9875, 0.9956]
+
+Value: zero_width_1.0   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8927 [0.8700, 0.9147]
+  recall                    0.9753 [0.9624, 0.9871]
+  false-positive rate       0.0542 [0.0426, 0.0661]
+  AP                        0.9879 [0.9827, 0.9923]
+  AUROC                     0.9920 [0.9878, 0.9954]
+
+Value: homoglyph_0.1   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8927 [0.8705, 0.9157]
+  recall                    0.9753 [0.9627, 0.9863]
+  false-positive rate       0.0542 [0.0424, 0.0665]
+  AP                        0.9879 [0.9827, 0.9923]
+  AUROC                     0.9920 [0.9878, 0.9956]
+
+Value: homoglyph_0.2   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8927 [0.8675, 0.9138]
+  recall                    0.9753 [0.9629, 0.9869]
+  false-positive rate       0.0542 [0.0432, 0.0679]
+  AP                        0.9879 [0.9831, 0.9923]
+  AUROC                     0.9920 [0.9879, 0.9955]
+
+Value: homoglyph_0.6   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8927 [0.8710, 0.9146]
+  recall                    0.9753 [0.9628, 0.9874]
+  false-positive rate       0.0542 [0.0423, 0.0662]
+  AP                        0.9879 [0.9826, 0.9923]
+  AUROC                     0.9920 [0.9879, 0.9955]
+
+Value: homoglyph_1.0   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8927 [0.8692, 0.9156]
+  recall                    0.9753 [0.9615, 0.9862]
+  false-positive rate       0.0542 [0.0421, 0.0664]
+  AP                        0.9879 [0.9823, 0.9921]
+  AUROC                     0.9920 [0.9872, 0.9953]
+
+Value: token_split_0.1   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8931 [0.8708, 0.9157]
+  recall                    0.9799 [0.9686, 0.9904]
+  false-positive rate       0.0542 [0.0422, 0.0661]
+  AP                        0.9915 [0.9875, 0.9951]
+  AUROC                     0.9945 [0.9911, 0.9972]
+
+Value: token_split_0.2   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8934 [0.8702, 0.9143]
+  recall                    0.9830 [0.9733, 0.9925]
+  false-positive rate       0.0542 [0.0435, 0.0662]
+  AP                        0.9929 [0.9895, 0.9960]
+  AUROC                     0.9959 [0.9938, 0.9978]
+
+Value: token_split_0.6   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8946 [0.8726, 0.9158]
+  recall                    0.9954 [0.9891, 1.0000]
+  false-positive rate       0.0542 [0.0433, 0.0653]
+  AP                        0.9976 [0.9956, 0.9990]
+  AUROC                     0.9987 [0.9976, 0.9995]
+
+Value: token_split_1.0   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8949 [0.8725, 0.9181]
+  recall                    0.9985 [0.9952, 1.0000]
+  false-positive rate       0.0542 [0.0418, 0.0662]
+  AP                        0.9984 [0.9965, 0.9998]
+  AUROC                     0.9992 [0.9981, 0.9999]
+
+Value: typo_0.1   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8933 [0.8712, 0.9153]
+  recall                    0.9815 [0.9711, 0.9912]
+  false-positive rate       0.0542 [0.0428, 0.0661]
+  AP                        0.9910 [0.9869, 0.9945]
+  AUROC                     0.9944 [0.9913, 0.9969]
+
+Value: typo_0.2   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8939 [0.8709, 0.9148]
+  recall                    0.9877 [0.9791, 0.9954]
+  false-positive rate       0.0542 [0.0437, 0.0660]
+  AP                        0.9920 [0.9880, 0.9953]
+  AUROC                     0.9949 [0.9920, 0.9973]
+
+Value: typo_0.6   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8937 [0.8701, 0.9159]
+  recall                    0.9861 [0.9766, 0.9940]
+  false-positive rate       0.0542 [0.0424, 0.0670]
+  AP                        0.9948 [0.9913, 0.9974]
+  AUROC                     0.9963 [0.9923, 0.9987]
+
+Value: typo_1.0   Column: protectai/normalization
+  threshold                 4e-05
+  test rows                 2049
+  positive rows             648 (31.63%)
+  negative rows             1401 (68.37%)
+  bootstrap resamples       1000
+  random-scorer AP          0.3163 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 0.8947 [0.8732, 0.9156]
+  recall                    0.9969 [0.9922, 1.0000]
+  false-positive rate       0.0542 [0.0434, 0.0653]
+  AP                        0.9976 [0.9955, 0.9992]
+  AUROC                     0.9988 [0.9977, 0.9996]
+
 Results table: recall [95% interval] (copy into section 1(d))
 -------------------------------------------------------------
 A one-class cell holds the metric the checker prints for it, named in parentheses.
@@ -2278,6 +4028,141 @@ Column: char_svm/augmentation
   typo_0.6          0.9938 [0.9874, 0.9986]
   typo_1.0          0.9969 [0.9921, 1.0000]
 
+Column: distilbert/none
+  clean             0.9985 [0.9952, 1.0000]
+  zero_width        0.9985 [0.9951, 1.0000]
+  homoglyph         0.9985 [0.9949, 1.0000]
+  base64            1.0000 [1.0000, 1.0000]
+  token_split       0.9985 [0.9952, 1.0000]
+  typo              0.9985 [0.9951, 1.0000]
+  payload_split     1.0000 [1.0000, 1.0000]
+  role_framing      1.0000 [1.0000, 1.0000]
+  base64_wide       0.7191 [0.6839, 0.7544]
+  zero_width_0.1    0.9985 [0.9952, 1.0000]
+  zero_width_0.2    0.9985 [0.9952, 1.0000]
+  zero_width_0.6    0.9985 [0.9950, 1.0000]
+  zero_width_1.0    0.9985 [0.9951, 1.0000]
+  homoglyph_0.1     0.9985 [0.9953, 1.0000]
+  homoglyph_0.2     0.9985 [0.9952, 1.0000]
+  homoglyph_0.6     1.0000 [1.0000, 1.0000]
+  homoglyph_1.0     1.0000 [1.0000, 1.0000]
+  token_split_0.1   0.9985 [0.9952, 1.0000]
+  token_split_0.2   0.9985 [0.9953, 1.0000]
+  token_split_0.6   1.0000 [1.0000, 1.0000]
+  token_split_1.0   1.0000 [1.0000, 1.0000]
+  typo_0.1          0.9985 [0.9951, 1.0000]
+  typo_0.2          0.9985 [0.9952, 1.0000]
+  typo_0.6          1.0000 [1.0000, 1.0000]
+  typo_1.0          1.0000 [1.0000, 1.0000]
+
+Column: distilbert/normalization
+  clean             0.9985 [0.9951, 1.0000]
+  zero_width        0.9985 [0.9952, 1.0000]
+  homoglyph         0.9985 [0.9952, 1.0000]
+  base64            1.0000 [1.0000, 1.0000]
+  token_split       0.9985 [0.9951, 1.0000]
+  typo              0.9985 [0.9951, 1.0000]
+  payload_split     1.0000 [1.0000, 1.0000]
+  role_framing      1.0000 [1.0000, 1.0000]
+  base64_wide       0.9985 [0.9952, 1.0000]
+  zero_width_0.1    0.9985 [0.9952, 1.0000]
+  zero_width_0.2    0.9985 [0.9952, 1.0000]
+  zero_width_0.6    0.9985 [0.9950, 1.0000]
+  zero_width_1.0    0.9985 [0.9950, 1.0000]
+  homoglyph_0.1     0.9985 [0.9951, 1.0000]
+  homoglyph_0.2     0.9985 [0.9951, 1.0000]
+  homoglyph_0.6     0.9985 [0.9952, 1.0000]
+  homoglyph_1.0     0.9985 [0.9952, 1.0000]
+  token_split_0.1   0.9985 [0.9952, 1.0000]
+  token_split_0.2   0.9985 [0.9943, 1.0000]
+  token_split_0.6   1.0000 [1.0000, 1.0000]
+  token_split_1.0   1.0000 [1.0000, 1.0000]
+  typo_0.1          0.9985 [0.9951, 1.0000]
+  typo_0.2          0.9985 [0.9953, 1.0000]
+  typo_0.6          1.0000 [1.0000, 1.0000]
+  typo_1.0          1.0000 [1.0000, 1.0000]
+
+Column: distilbert/augmentation
+  clean             0.9985 [0.9952, 1.0000]
+  zero_width        0.9985 [0.9953, 1.0000]
+  homoglyph         1.0000 [1.0000, 1.0000]
+  base64            1.0000 [1.0000, 1.0000]
+  token_split       0.9985 [0.9952, 1.0000]
+  typo              0.9985 [0.9939, 1.0000]
+  payload_split     1.0000 [1.0000, 1.0000]
+  role_framing      1.0000 [1.0000, 1.0000]
+  base64_wide       0.8364 [0.8091, 0.8634]
+  zero_width_0.1    0.9985 [0.9952, 1.0000]
+  zero_width_0.2    0.9985 [0.9950, 1.0000]
+  zero_width_0.6    0.9985 [0.9952, 1.0000]
+  zero_width_1.0    0.9985 [0.9952, 1.0000]
+  homoglyph_0.1     0.9985 [0.9953, 1.0000]
+  homoglyph_0.2     0.9985 [0.9953, 1.0000]
+  homoglyph_0.6     1.0000 [1.0000, 1.0000]
+  homoglyph_1.0     1.0000 [1.0000, 1.0000]
+  token_split_0.1   0.9985 [0.9953, 1.0000]
+  token_split_0.2   0.9985 [0.9953, 1.0000]
+  token_split_0.6   0.9985 [0.9951, 1.0000]
+  token_split_1.0   0.9985 [0.9952, 1.0000]
+  typo_0.1          0.9985 [0.9952, 1.0000]
+  typo_0.2          0.9985 [0.9951, 1.0000]
+  typo_0.6          0.9985 [0.9952, 1.0000]
+  typo_1.0          0.9985 [0.9951, 1.0000]
+
+Column: protectai/none
+  clean             0.9753 [0.9620, 0.9864]
+  zero_width        0.9892 [0.9802, 0.9968]
+  homoglyph         0.9985 [0.9951, 1.0000]
+  base64            1.0000 [1.0000, 1.0000]
+  token_split       0.9892 [0.9806, 0.9968]
+  typo              0.9892 [0.9799, 0.9954]
+  payload_split     1.0000 [1.0000, 1.0000]
+  role_framing      0.9969 [0.9921, 1.0000]
+  base64_wide       1.0000 [1.0000, 1.0000]
+  zero_width_0.1    0.9830 [0.9725, 0.9924]
+  zero_width_0.2    0.9877 [0.9779, 0.9954]
+  zero_width_0.6    0.9954 [0.9892, 1.0000]
+  zero_width_1.0    0.9985 [0.9953, 1.0000]
+  homoglyph_0.1     0.9923 [0.9845, 0.9984]
+  homoglyph_0.2     0.9985 [0.9952, 1.0000]
+  homoglyph_0.6     1.0000 [1.0000, 1.0000]
+  homoglyph_1.0     1.0000 [1.0000, 1.0000]
+  token_split_0.1   0.9799 [0.9686, 0.9897]
+  token_split_0.2   0.9830 [0.9726, 0.9923]
+  token_split_0.6   0.9954 [0.9893, 1.0000]
+  token_split_1.0   0.9985 [0.9952, 1.0000]
+  typo_0.1          0.9815 [0.9709, 0.9910]
+  typo_0.2          0.9877 [0.9795, 0.9953]
+  typo_0.6          0.9861 [0.9772, 0.9941]
+  typo_1.0          0.9969 [0.9921, 1.0000]
+
+Column: protectai/normalization
+  clean             0.9753 [0.9631, 0.9870]
+  zero_width        0.9753 [0.9621, 0.9865]
+  homoglyph         0.9753 [0.9625, 0.9865]
+  base64            1.0000 [1.0000, 1.0000]
+  token_split       0.9892 [0.9802, 0.9956]
+  typo              0.9892 [0.9809, 0.9968]
+  payload_split     1.0000 [1.0000, 1.0000]
+  role_framing      0.9969 [0.9922, 1.0000]
+  base64_wide       0.9846 [0.9744, 0.9938]
+  zero_width_0.1    0.9753 [0.9634, 0.9863]
+  zero_width_0.2    0.9753 [0.9635, 0.9858]
+  zero_width_0.6    0.9753 [0.9626, 0.9866]
+  zero_width_1.0    0.9753 [0.9624, 0.9871]
+  homoglyph_0.1     0.9753 [0.9627, 0.9863]
+  homoglyph_0.2     0.9753 [0.9629, 0.9869]
+  homoglyph_0.6     0.9753 [0.9628, 0.9874]
+  homoglyph_1.0     0.9753 [0.9615, 0.9862]
+  token_split_0.1   0.9799 [0.9686, 0.9904]
+  token_split_0.2   0.9830 [0.9733, 0.9925]
+  token_split_0.6   0.9954 [0.9891, 1.0000]
+  token_split_1.0   0.9985 [0.9952, 1.0000]
+  typo_0.1          0.9815 [0.9711, 0.9912]
+  typo_0.2          0.9877 [0.9791, 0.9954]
+  typo_0.6          0.9861 [0.9766, 0.9940]
+  typo_1.0          0.9969 [0.9922, 1.0000]
+
 Difference from the baseline value 'clean' (copy into section 1(e))
 -------------------------------------------------------------------
 Difference = the value's metric minus the baseline value's metric in the same column.
@@ -2440,6 +4325,136 @@ Column: char_svm/augmentation
   typo_0.6          difference -0.0015   change +0.0015 (recall)
   typo_1.0          difference +0.0015   change -0.0015 (recall)
 
+Column: distilbert/none
+  zero_width        difference +0.0000   change +0.0000 (recall)
+  homoglyph         difference +0.0000   change +0.0000 (recall)
+  base64            difference +0.0015   change -0.0015 (recall)
+  token_split       difference +0.0000   change +0.0000 (recall)
+  typo              difference +0.0000   change +0.0000 (recall)
+  payload_split     difference +0.0015   change -0.0015 (recall)
+  role_framing      difference +0.0015   change -0.0015 (recall)
+  base64_wide       difference -0.2793   change +0.2793 (recall)
+  zero_width_0.1    difference +0.0000   change +0.0000 (recall)
+  zero_width_0.2    difference +0.0000   change +0.0000 (recall)
+  zero_width_0.6    difference +0.0000   change +0.0000 (recall)
+  zero_width_1.0    difference +0.0000   change +0.0000 (recall)
+  homoglyph_0.1     difference +0.0000   change +0.0000 (recall)
+  homoglyph_0.2     difference +0.0000   change +0.0000 (recall)
+  homoglyph_0.6     difference +0.0015   change -0.0015 (recall)
+  homoglyph_1.0     difference +0.0015   change -0.0015 (recall)
+  token_split_0.1   difference +0.0000   change +0.0000 (recall)
+  token_split_0.2   difference +0.0000   change +0.0000 (recall)
+  token_split_0.6   difference +0.0015   change -0.0015 (recall)
+  token_split_1.0   difference +0.0015   change -0.0015 (recall)
+  typo_0.1          difference +0.0000   change +0.0000 (recall)
+  typo_0.2          difference +0.0000   change +0.0000 (recall)
+  typo_0.6          difference +0.0015   change -0.0015 (recall)
+  typo_1.0          difference +0.0015   change -0.0015 (recall)
+
+Column: distilbert/normalization
+  zero_width        difference +0.0000   change +0.0000 (recall)
+  homoglyph         difference +0.0000   change +0.0000 (recall)
+  base64            difference +0.0015   change -0.0015 (recall)
+  token_split       difference +0.0000   change +0.0000 (recall)
+  typo              difference +0.0000   change +0.0000 (recall)
+  payload_split     difference +0.0015   change -0.0015 (recall)
+  role_framing      difference +0.0015   change -0.0015 (recall)
+  base64_wide       difference +0.0000   change +0.0000 (recall)
+  zero_width_0.1    difference +0.0000   change +0.0000 (recall)
+  zero_width_0.2    difference +0.0000   change +0.0000 (recall)
+  zero_width_0.6    difference +0.0000   change +0.0000 (recall)
+  zero_width_1.0    difference +0.0000   change +0.0000 (recall)
+  homoglyph_0.1     difference +0.0000   change +0.0000 (recall)
+  homoglyph_0.2     difference +0.0000   change +0.0000 (recall)
+  homoglyph_0.6     difference +0.0000   change +0.0000 (recall)
+  homoglyph_1.0     difference +0.0000   change +0.0000 (recall)
+  token_split_0.1   difference +0.0000   change +0.0000 (recall)
+  token_split_0.2   difference +0.0000   change +0.0000 (recall)
+  token_split_0.6   difference +0.0015   change -0.0015 (recall)
+  token_split_1.0   difference +0.0015   change -0.0015 (recall)
+  typo_0.1          difference +0.0000   change +0.0000 (recall)
+  typo_0.2          difference +0.0000   change +0.0000 (recall)
+  typo_0.6          difference +0.0015   change -0.0015 (recall)
+  typo_1.0          difference +0.0015   change -0.0015 (recall)
+
+Column: distilbert/augmentation
+  zero_width        difference +0.0000   change +0.0000 (recall)
+  homoglyph         difference +0.0015   change -0.0015 (recall)
+  base64            difference +0.0015   change -0.0015 (recall)
+  token_split       difference +0.0000   change +0.0000 (recall)
+  typo              difference +0.0000   change +0.0000 (recall)
+  payload_split     difference +0.0015   change -0.0015 (recall)
+  role_framing      difference +0.0015   change -0.0015 (recall)
+  base64_wide       difference -0.1620   change +0.1620 (recall)
+  zero_width_0.1    difference +0.0000   change +0.0000 (recall)
+  zero_width_0.2    difference +0.0000   change +0.0000 (recall)
+  zero_width_0.6    difference +0.0000   change +0.0000 (recall)
+  zero_width_1.0    difference +0.0000   change +0.0000 (recall)
+  homoglyph_0.1     difference +0.0000   change +0.0000 (recall)
+  homoglyph_0.2     difference +0.0000   change +0.0000 (recall)
+  homoglyph_0.6     difference +0.0015   change -0.0015 (recall)
+  homoglyph_1.0     difference +0.0015   change -0.0015 (recall)
+  token_split_0.1   difference +0.0000   change +0.0000 (recall)
+  token_split_0.2   difference +0.0000   change +0.0000 (recall)
+  token_split_0.6   difference +0.0000   change +0.0000 (recall)
+  token_split_1.0   difference +0.0000   change +0.0000 (recall)
+  typo_0.1          difference +0.0000   change +0.0000 (recall)
+  typo_0.2          difference +0.0000   change +0.0000 (recall)
+  typo_0.6          difference +0.0000   change +0.0000 (recall)
+  typo_1.0          difference +0.0000   change +0.0000 (recall)
+
+Column: protectai/none
+  zero_width        difference +0.0139   change -0.0139 (recall)
+  homoglyph         difference +0.0231   change -0.0231 (recall)
+  base64            difference +0.0247   change -0.0247 (recall)
+  token_split       difference +0.0139   change -0.0139 (recall)
+  typo              difference +0.0139   change -0.0139 (recall)
+  payload_split     difference +0.0247   change -0.0247 (recall)
+  role_framing      difference +0.0216   change -0.0216 (recall)
+  base64_wide       difference +0.0247   change -0.0247 (recall)
+  zero_width_0.1    difference +0.0077   change -0.0077 (recall)
+  zero_width_0.2    difference +0.0123   change -0.0123 (recall)
+  zero_width_0.6    difference +0.0201   change -0.0201 (recall)
+  zero_width_1.0    difference +0.0231   change -0.0231 (recall)
+  homoglyph_0.1     difference +0.0170   change -0.0170 (recall)
+  homoglyph_0.2     difference +0.0231   change -0.0231 (recall)
+  homoglyph_0.6     difference +0.0247   change -0.0247 (recall)
+  homoglyph_1.0     difference +0.0247   change -0.0247 (recall)
+  token_split_0.1   difference +0.0046   change -0.0046 (recall)
+  token_split_0.2   difference +0.0077   change -0.0077 (recall)
+  token_split_0.6   difference +0.0201   change -0.0201 (recall)
+  token_split_1.0   difference +0.0231   change -0.0231 (recall)
+  typo_0.1          difference +0.0062   change -0.0062 (recall)
+  typo_0.2          difference +0.0123   change -0.0123 (recall)
+  typo_0.6          difference +0.0108   change -0.0108 (recall)
+  typo_1.0          difference +0.0216   change -0.0216 (recall)
+
+Column: protectai/normalization
+  zero_width        difference +0.0000   change +0.0000 (recall)
+  homoglyph         difference +0.0000   change +0.0000 (recall)
+  base64            difference +0.0247   change -0.0247 (recall)
+  token_split       difference +0.0139   change -0.0139 (recall)
+  typo              difference +0.0139   change -0.0139 (recall)
+  payload_split     difference +0.0247   change -0.0247 (recall)
+  role_framing      difference +0.0216   change -0.0216 (recall)
+  base64_wide       difference +0.0093   change -0.0093 (recall)
+  zero_width_0.1    difference +0.0000   change +0.0000 (recall)
+  zero_width_0.2    difference +0.0000   change +0.0000 (recall)
+  zero_width_0.6    difference +0.0000   change +0.0000 (recall)
+  zero_width_1.0    difference +0.0000   change +0.0000 (recall)
+  homoglyph_0.1     difference +0.0000   change +0.0000 (recall)
+  homoglyph_0.2     difference +0.0000   change +0.0000 (recall)
+  homoglyph_0.6     difference +0.0000   change +0.0000 (recall)
+  homoglyph_1.0     difference +0.0000   change +0.0000 (recall)
+  token_split_0.1   difference +0.0046   change -0.0046 (recall)
+  token_split_0.2   difference +0.0077   change -0.0077 (recall)
+  token_split_0.6   difference +0.0201   change -0.0201 (recall)
+  token_split_1.0   difference +0.0231   change -0.0231 (recall)
+  typo_0.1          difference +0.0062   change -0.0062 (recall)
+  typo_0.2          difference +0.0123   change -0.0123 (recall)
+  typo_0.6          difference +0.0108   change -0.0108 (recall)
+  typo_1.0          difference +0.0216   change -0.0216 (recall)
+
 Error sample (section 4)
 ------------------------
 Value: homoglyph   Column: tfidf_lr/none
@@ -2596,3 +4611,126 @@ Warnings
 - value typo_0.2, column char_svm/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
 - value typo_0.6, column char_svm/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
 - value typo_1.0, column char_svm/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value clean, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value base64, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value payload_split, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value role_framing, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.1, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.2, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.6, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_1.0, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.1, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.2, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.6, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_1.0, column distilbert/none: recall, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.1, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.2, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.6, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_1.0, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.1, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.2, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.6, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_1.0, column distilbert/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value clean, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value base64, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value payload_split, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value role_framing, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value base64_wide, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.1, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.2, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.6, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_1.0, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.1, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.2, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.6, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_1.0, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.1, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.2, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.6, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_1.0, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.1, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.2, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.6, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_1.0, column distilbert/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value clean, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value base64, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value payload_split, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value role_framing, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.1, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.2, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.6, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_1.0, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.1, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.2, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.6, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_1.0, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.1, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.2, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.6, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_1.0, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.1, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.2, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.6, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_1.0, column distilbert/augmentation: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value clean, column protectai/none: AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width, column protectai/none: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value base64, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split, column protectai/none: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo, column protectai/none: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value payload_split, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value role_framing, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value base64_wide, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.1, column protectai/none: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.2, column protectai/none: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.6, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_1.0, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.1, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.2, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.6, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_1.0, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.1, column protectai/none: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.2, column protectai/none: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.6, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_1.0, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.1, column protectai/none: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.2, column protectai/none: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.6, column protectai/none: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_1.0, column protectai/none: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value clean, column protectai/normalization: AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width, column protectai/normalization: AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph, column protectai/normalization: AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value base64, column protectai/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split, column protectai/normalization: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo, column protectai/normalization: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value payload_split, column protectai/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value role_framing, column protectai/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value base64_wide, column protectai/normalization: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.1, column protectai/normalization: AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.2, column protectai/normalization: AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_0.6, column protectai/normalization: AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value zero_width_1.0, column protectai/normalization: AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.1, column protectai/normalization: AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.2, column protectai/normalization: AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_0.6, column protectai/normalization: AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value homoglyph_1.0, column protectai/normalization: AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.1, column protectai/normalization: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.2, column protectai/normalization: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_0.6, column protectai/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value token_split_1.0, column protectai/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.1, column protectai/normalization: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.2, column protectai/normalization: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_0.6, column protectai/normalization: AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value typo_1.0, column protectai/normalization: recall, AP, AUROC at or above 0.99. Name the leakage check you ran and its result in section 1(c).
