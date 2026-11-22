@@ -1,0 +1,194 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/8236 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 8236/8236 [00:00<00:00, 171809.13 examples/s]
+Generating test split:   0%|          | 0/2060 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 2060/2060 [00:00<00:00, 342148.11 examples/s]
+Rows from split.csv: 6733 train, 1122 validation, 2049 test; device: cuda
+Augmented training set: 6733 original + 3920 obfuscated copies
+Augmented leakage: train rows also in test = 0, also in validation = 0
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 14286.75it/s]
+[transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_transform.bias    | UNEXPECTED | 
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+classifier.bias         | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+classifier.weight       | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+   epoch 1/2 done, last batch loss 0.0189
+   epoch 2/2 done, last batch loss 0.0025
+
+== distilbert ==
+Training (or loading) time: 276.9 s
+Threshold: 0.002023
+
+== NO DEFENSE ==
+clean: recall 0.9985
+zero_width: recall 0.9985
+homoglyph: recall 0.9985
+base64: recall 1.0000
+token_split: recall 0.9985
+typo: recall 0.9985
+payload_split: recall 1.0000
+role_framing: recall 1.0000
+base64_wide: recall 0.7191
+zero_width_0.1: recall 0.9985
+zero_width_0.2: recall 0.9985
+zero_width_0.6: recall 0.9985
+zero_width_1.0: recall 0.9985
+homoglyph_0.1: recall 0.9985
+homoglyph_0.2: recall 0.9985
+homoglyph_0.6: recall 1.0000
+homoglyph_1.0: recall 1.0000
+token_split_0.1: recall 0.9985
+token_split_0.2: recall 0.9985
+token_split_0.6: recall 1.0000
+token_split_1.0: recall 1.0000
+typo_0.1: recall 0.9985
+typo_0.2: recall 0.9985
+typo_0.6: recall 1.0000
+typo_1.0: recall 1.0000
+
+== NORMALIZATION ==
+clean: recall 0.9985
+zero_width: recall 0.9985
+homoglyph: recall 0.9985
+base64: recall 1.0000
+token_split: recall 0.9985
+typo: recall 0.9985
+payload_split: recall 1.0000
+role_framing: recall 1.0000
+base64_wide: recall 0.9985
+zero_width_0.1: recall 0.9985
+zero_width_0.2: recall 0.9985
+zero_width_0.6: recall 0.9985
+zero_width_1.0: recall 0.9985
+homoglyph_0.1: recall 0.9985
+homoglyph_0.2: recall 0.9985
+homoglyph_0.6: recall 0.9985
+homoglyph_1.0: recall 0.9985
+token_split_0.1: recall 0.9985
+token_split_0.2: recall 0.9985
+token_split_0.6: recall 1.0000
+token_split_1.0: recall 1.0000
+typo_0.1: recall 0.9985
+typo_0.2: recall 0.9985
+typo_0.6: recall 1.0000
+typo_1.0: recall 1.0000
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 4900.06it/s]
+[transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_transform.bias    | UNEXPECTED | 
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+classifier.bias         | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+classifier.weight       | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+/usr/local/lib/python3.13/dist-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+   epoch 1/2 done, last batch loss 0.0151
+   epoch 2/2 done, last batch loss 0.0014
+
+== AUGMENTATION ==
+Training time: 434.8 s
+Threshold: 0.001139
+clean: recall 0.9985
+zero_width: recall 0.9985
+homoglyph: recall 1.0000
+base64: recall 1.0000
+token_split: recall 0.9985
+typo: recall 0.9985
+payload_split: recall 1.0000
+role_framing: recall 1.0000
+base64_wide: recall 0.8364
+zero_width_0.1: recall 0.9985
+zero_width_0.2: recall 0.9985
+zero_width_0.6: recall 0.9985
+zero_width_1.0: recall 0.9985
+homoglyph_0.1: recall 0.9985
+homoglyph_0.2: recall 0.9985
+homoglyph_0.6: recall 1.0000
+homoglyph_1.0: recall 1.0000
+token_split_0.1: recall 0.9985
+token_split_0.2: recall 0.9985
+token_split_0.6: recall 0.9985
+token_split_1.0: recall 0.9985
+typo_0.1: recall 0.9985
+typo_0.2: recall 0.9985
+typo_0.6: recall 0.9985
+typo_1.0: recall 0.9985
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 3941.43it/s]
+
+== protectai ==
+Training (or loading) time: 25.0 s
+Threshold: 0.000040
+
+== NO DEFENSE ==
+clean: recall 0.9753
+zero_width: recall 0.9892
+homoglyph: recall 0.9985
+base64: recall 1.0000
+token_split: recall 0.9892
+typo: recall 0.9892
+payload_split: recall 1.0000
+role_framing: recall 0.9969
+base64_wide: recall 1.0000
+zero_width_0.1: recall 0.9830
+zero_width_0.2: recall 0.9877
+zero_width_0.6: recall 0.9954
+zero_width_1.0: recall 0.9985
+homoglyph_0.1: recall 0.9923
+homoglyph_0.2: recall 0.9985
+homoglyph_0.6: recall 1.0000
+homoglyph_1.0: recall 1.0000
+token_split_0.1: recall 0.9799
+token_split_0.2: recall 0.9830
+token_split_0.6: recall 0.9954
+token_split_1.0: recall 0.9985
+typo_0.1: recall 0.9815
+typo_0.2: recall 0.9877
+typo_0.6: recall 0.9861
+typo_1.0: recall 0.9969
+
+== NORMALIZATION ==
+clean: recall 0.9753
+zero_width: recall 0.9753
+homoglyph: recall 0.9753
+base64: recall 1.0000
+token_split: recall 0.9892
+typo: recall 0.9892
+payload_split: recall 1.0000
+role_framing: recall 0.9969
+base64_wide: recall 0.9846
+zero_width_0.1: recall 0.9753
+zero_width_0.2: recall 0.9753
+zero_width_0.6: recall 0.9753
+zero_width_1.0: recall 0.9753
+homoglyph_0.1: recall 0.9753
+homoglyph_0.2: recall 0.9753
+homoglyph_0.6: recall 0.9753
+homoglyph_1.0: recall 0.9753
+token_split_0.1: recall 0.9799
+token_split_0.2: recall 0.9830
+token_split_0.6: recall 0.9954
+token_split_1.0: recall 0.9985
+typo_0.1: recall 0.9815
+typo_0.2: recall 0.9877
+typo_0.6: recall 0.9861
+typo_1.0: recall 0.9969
+
+Python 3.13.16, torch 2.14.1+cu130, transformers 5.22.1, pandas 2.2.3, numpy 2.4.6, device cuda
